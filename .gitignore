@@ -25,4 +25,5 @@ local/
 .pydevproject
 .DS_Store
 
+*/node_modules/
 
