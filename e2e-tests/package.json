@@ -1,0 +1,21 @@
+{
+  "name": "pretix-e2e-tests",
+  "version": "1.0.0",
+  "description": "E2E tests for Pretix - Advanced QA Assignment 2",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:auth": "npx playwright test tests/auth.spec.ts",
+    "test:checkout": "npx playwright test tests/checkout.spec.ts",
+    "test:orders": "npx playwright test tests/orders.spec.ts",
+    "test:payments": "npx playwright test tests/payments.spec.ts",
+    "test:quotas": "npx playwright test tests/quotas.spec.ts",
+    "test:api": "npx playwright test tests/api.spec.ts",
+    "test:control": "npx playwright test tests/control-panel.spec.ts",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0"
+  }
+}
